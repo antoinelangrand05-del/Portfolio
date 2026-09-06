@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Site — Procadrans</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">Antoine Langrand</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="">Mon Parcours</a></li>
+        <li><a href="procadrans.html" class="active">Procadrans</a></li>
+        <li><a href="sni.html" class="">Style Network International</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+
+  <div class="hero">
+    <div>
+      <p class="hero-kicker">Stage de fin d'étude</p>
+      <h1>Procadrans</h1>
+      <p class="hero-stage">Amélioration continue des flux physiques et informatiques en logistique</p>
+    </div>
+    <svg class="hero-dial" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration d'un cadran de montre">
+      <circle class="cadre" cx="100" cy="100" r="92"/>
+      <g class="index">
+        <line x1="100" y1="14" x2="100" y2="26"/>
+        <line x1="100" y1="174" x2="100" y2="186"/>
+        <line x1="14" y1="100" x2="26" y2="100"/>
+        <line x1="174" y1="100" x2="186" y2="100"/>
+        <line x1="53" y1="20" x2="58" y2="30"/>
+        <line x1="147" y1="20" x2="142" y2="30"/>
+        <line x1="53" y1="180" x2="58" y2="170"/>
+        <line x1="147" y1="180" x2="142" y2="170"/>
+        <line x1="20" y1="53" x2="30" y2="58"/>
+        <line x1="20" y1="147" x2="30" y2="142"/>
+        <line x1="180" y1="53" x2="170" y2="58"/>
+        <line x1="180" y1="147" x2="170" y2="142"/>
+      </g>
+      <g class="index-cardinal">
+        <line x1="100" y1="14" x2="100" y2="30"/>
+        <line x1="100" y1="170" x2="100" y2="186"/>
+        <line x1="14" y1="100" x2="30" y2="100"/>
+        <line x1="170" y1="100" x2="186" y2="100"/>
+      </g>
+      <line class="aiguille" x1="100" y1="100" x2="100" y2="52" stroke-width="3"/>
+      <line class="aiguille" x1="100" y1="100" x2="138" y2="112" stroke-width="2"/>
+      <circle class="centre" cx="100" cy="100" r="4"/>
+    </svg>
+  </div>
+
+  <p class="section-texte">
+    Un réseau de cinq Manufactures Richemont assure la fabrication et la fourniture des ressources nécessaires pour
+    répondre aux besoins des différentes Maisons du groupe, notamment en matières premières et en composants non brandés.
+    Parmi ces Manufactures, Procadrans est spécialisée dans la conception et le développement de cadrans destinés aux Maisons horlogères du groupe.
+  </p>
+
+  <div class="citation">
+    <span class="etiquette">Problématique</span>
+    <p>Comment améliorer et standardiser les processus de logistique d'exécution en vue de permettre un pilotage
+      des flux d'achats et de consommations des consommables basé sur les données ERP ?</p>
+  </div>
+
+  <div class="carte">
+    <h3>Contexte</h3>
+    <p>La gestion des flux de consommables de production était peu standardisée et faiblement automatisée,
+      limitant ainsi la traçabilité ainsi que le pilotage des achats et des consommations.
+      Cette situation entraînait une désynchronisation entre les flux physiques et les flux informatiques,
+      pouvant générer des écarts entre les stocks physiques et ceux enregistrés dans l'ERP.
+      Les données disponibles dans l'ERP ne reflétaient alors pas fidèlement les consommations réelles des différents ateliers,
+      les rendant difficilement exploitables.
+    </p>
+  </div>
+
+  <div class="carte">
+    <h3>Objectifs</h3>
+    <ul class="liste-jolie">
+      <li>Synchronisation (à l'heure) des flux physiques et informatiques de consommation des consommables.</li>
+      <li>Approvisionnement des consommables automatisé et basé sur les données de l'ERP (état des stocks, cycle de vie, stock min, lead time).</li>
+      <li>Collecte de données précises sur les commandes (qui, quoi, quand, où).</li>
+      <li>Mise en place de KPIs croisant données MES et ERP.</li>
+      <li>Développement de tableaux de bord Power BI pour monitorer ces KPIs.</li>
+    </ul>
+  </div>
+
+  <div class="carte">
+    <h3 class="titre-section">En pratique</h3>
+    <img src="Images/Schéma en pratique.png" alt="Diagramme de flux de la gestion opérationnelle du magasin (fonctionnement cible)">
+    <figcaption>Diagramme de flux de la gestion opérationnelle du magasin (fonctionnement cible)</figcaption>
+
+    <h3>Interface magasin / production</h3>
+    <p>
+      La solution s'appuie sur deux applications complémentaires.
+      La première, développée sous Tulip, permet aux collaborateurs de production de saisir et de suivre leurs demandes de consommables.
+      Chaque commande est enregistrée et tracée dans une table dédiée, garantissant ainsi un suivi complet des demandes.
+      La seconde application est destinée au magasinier. Elle lui permet de consulter les commandes,
+      de les préparer et de les traiter, puis d'effectuer automatiquement les transferts de stocks correspondants
+      dans l'ERP directement depuis l'application.
+    </p>
+
+    <img src="Images/schéma Tulip.png" alt="Schéma des flux informatiques des applications de passage de commandes avec l'ERP" style="margin-top: 24px;">
+    <figcaption>Schéma des flux informatiques des applications de passage de commandes avec l'ERP</figcaption>
+
+    <div class="carrousel-conteneur">
+      <button class="carrousel-fleche gauche" onclick="document.getElementById('carrousel-interfaces').scrollBy({left: -600, behavior: 'smooth'})">&#8249;</button>
+
+      <div class="carrousel carrousel-pleine-largeur" id="carrousel-interfaces">
+        <div class="carrousel-carte">
+          <img src="Images/choixtypecommande.png" alt="Interface Tulip magasin — choix du type de commande">
+          <div>
+            <h3>Interface Magasin - Choix du type de commande</h3>
+            <p>Choix du type de commandes à traiter : ponctuelles ("one-shots"), récurrentes ("listes") ou reliquats ("reste à livrer").</p>
+          </div>
+        </div>
+
+        <div class="carrousel-carte">
+          <img src="Images/choixsecteuratelier.png" alt="Interface Tulip magasin — choix du secteur et de l'atelier">
+          <div>
+            <h3>Interface Magasin - Choix du secteur et de l'atelier</h3>
+            <p>Choix du secteur et de l'atelier dont les commandes sont à préparer, avec une bulle indiquant le nombre de commandes en attente.</p>
+          </div>
+        </div>
+
+        <div class="carrousel-carte">
+          <img src="Images/affichagecmd.png" alt="Interface Tulip magasin — affichage des commandes et transfert ERP">
+          <div>
+            <h3>Interface Magasin - Affichage, transfert ERP et vérification</h3>
+            <p>Sélection des commandes préparées et des quantités livrées, puis transfert de stock dans l'ERP en un clic, suivi d'un écran de vérification.</p>
+          </div>
+        </div>
+
+        <div class="carrousel-carte">
+          <img src="Images/recherche.png" alt="Interface Tulip production — recherche de référence">
+          <div>
+            <h3>Interface Production - Recherche de la référence</h3>
+            <p>Recherche par référence, mots-clés ou codes-barres, côté production.</p>
+          </div>
+        </div>
+
+        <div class="carrousel-carte">
+          <img src="Images/infocmd.png" alt="Interface Tulip production — commande ponctuelle">
+          <div>
+            <h3>Interface Production - Commande ponctuelle</h3>
+            <p>Renseignement du délai souhaité, de la quantité souhaitée et d'un commentaire pour le magasinier (ex : Urgent).</p>
+          </div>
+        </div>
+
+        <div class="carrousel-carte">
+          <img src="Images/liste.png" alt="Interface Tulip production — commande récurrente">
+          <div>
+            <h3>Interface Production - Commande récurrente</h3>
+            <p>Liste automatiquement spécifique à chaque atelier : sélection ou désélection de références, modification des quantités, ajout ou suppression d'éléments.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carrousel-fleche droite" onclick="document.getElementById('carrousel-interfaces').scrollBy({left: 600, behavior: 'smooth'})">&#8250;</button>
+    </div>
+
+    <h3 style="margin-top: 24px;">Interface magasin / fournisseur</h3>
+    <p>
+      La formalisation des besoins en approvisionnement est automatisée grâce à des requêtes SQL permettant d'identifier et de recenser,
+      dans un fichier Excel, les références à commander.
+      La sélection des articles s'appuie sur les paramètres renseignés dans les fiches articles de l'ERP (stock minimum,
+      délai d'approvisionnement, cycle de vie et taille de lot) ainsi que sur le niveau de stock disponible dans le système.
+      Afin de garantir la fiabilité et la pérennité de l'outil de passage des commandes fournisseurs,
+      les données des fiches articles sont réévaluées et mises à jour tous les six mois.
+      Cette mise à jour est réalisée à l'aide d'un outil d'analyse combinant Excel, SQL et LX Connector,
+      qui exploite les données de consommation récentes afin d'ajuster les paramètres d'approvisionnement au plus près des besoins réels.
+    </p>
+
+    <img src="Images/schéma outil fa.png" alt="Schéma de fonctionnement de l'outil de mise à jour des paramètres de fiches articles dans l'ERP" style="margin-top: 24px;">
+    <figcaption>Schéma de fonctionnement de l'outil de mise à jour des paramètres de fiches articles dans l'ERP</figcaption>
+  </div>
+
+  <div class="carte">
+    <h3>Conduite du changement</h3>
+    <p>Formation du personnel, audits réguliers du déploiement de la solution en production,
+      rédaction de la documentation nécessaire pour assurer une continuité de service efficiente.
+    </p>
+  </div>
+
+  <div class="carte">
+    <h3>Résultats</h3>
+    <div class="resultats-grille">
+      <div class="stat-phare">
+        <span class="chiffre">95%</span>
+        <span class="libelle">de fiabilité des stocks</span>
+      </div>
+      <ul class="liste-jolie">
+        <li>Un flux informatique qui suit à l'heure le flux physique.</li>
+        <li>Fiabilité des stocks obtenue grâce à une meilleure synchronisation entre les mouvements physiques et leur traduction dans l'ERP.</li>
+        <li>Mise en place d'une méthode unique, standardisée et robuste de passage des commandes de consommables (de la production au magasin, en interne).</li>
+        <li>Déploiement d'outils de passage de commandes (interface entre le magasin et le fournisseur) directement pilotés par les données de l'ERP afin de fiabiliser et de simplifier l'approvisionnement en consommables.</li>
+      </ul>
+    </div>
+  </div>
+
+<h1 class="sous-titre">Projets annexes</h1>
+
+<div class="carrousel-conteneur">
+  <button class="carrousel-fleche gauche" onclick="document.getElementById('carrousel-annexes').scrollBy({left: -300, behavior: 'smooth'})">&#8249;</button>
+
+  <div class="carrousel" id="carrousel-annexes">
+
+    <div class="carrousel-carte" style="width: 320px; flex-basis: 320px;">
+      <h3>Tableaux de bord Power BI (données MES et ERP)</h3>
+      <ul class="liste-jolie">
+        <li>Analyse et valorisation des transferts de stocks par typologie, secteur et Entité Autonome de Production (EAP).</li>
+        <li>Indicateurs de pilotage et d'alerte pour identifier écarts, anomalies et situations à surveiller.</li>
+        <li>Suivi de l'usage des applications: taux d'utilisation, segmentation des utilisateurs, analyse des usages.</li>
+        <li>Suivi, qualification et catégorisation des incidents (erreurs API, fonctionnelles, utilisateurs) pour cibler les principales sources de dysfonctionnement.</li>
+      </ul>
+    </div>
+
+    <div class="carrousel-carte" style="width: 320px; flex-basis: 320px;">
+      <h3>Key User Tulip</h3>
+      <ul class="liste-jolie">
+        <li>Participation à la définition et au pilotage de la roadmap.</li>
+        <li>Support opérationnel des outils déjà livrés.</li>
+        <li>Identification des besoins et des gains potentiels sur le terrain.</li>
+        <li>Standardisation des bonnes pratiques Tulip au niveau de la manufacture, avec les chefs de projet et les autres stagiaires.</li>
+        <li>Monitoring Power BI des applications et log des erreurs.</li>
+        <li>Relais de la manufacture auprès du groupe.</li>
+      </ul>
+    </div>
+
+    <div class="carrousel-carte" style="width: 320px; flex-basis: 320px;">
+      <h3>Application Tulip d'affichage au poste</h3>
+      <ul class="liste-jolie">
+        <li>Affichage sur tablette au poste des plans via recherche par référence (technique, esthétique, phase, usinage), avec moteur de recherche optimisé minimisant la saisie tout en garantissant que le bon plan soit proposé (API Windchill).</li>
+        <li>Gain de temps pour les opérateurs et pour les gestionnaires de stocks, qui ne cherchent et n'impriment plus les références un par un.</li>
+        <li>Affichage sur tablette du planning réalisé par l'ordonnanceur du secteur, pour une planification plus agile.</li>
+      </ul>
+    </div>
+
+    <div class="carrousel-carte" style="width: 320px; flex-basis: 320px;">
+      <h3>Réaménagement 5S</h3>
+      <ul class="liste-jolie">
+        <li><strong>Seiton — Ranger :</strong> réorganisation du local explosifs pour attribuer une place dédiée à chaque famille de consommables et faciliter leur identification.</li>
+        <li><strong>Seiketsu — Standardiser :</strong> uniformisation et labellisation des rayonnages selon un ordre alphanumérique.</li>
+        <li><strong>Seiso — Nettoyer :</strong> espace propre et organisé permettant de détecter plus facilement les anomalies.</li>
+        <li><strong>Shitsuke — Maintenir :</strong> formation des collaborateurs aux nouvelles méthodes de rangement pour en assurer l'application durable.</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>

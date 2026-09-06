@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Site — Style Network International</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">Antoine Langrand</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="">Mon Parcours</a></li>
+        <li><a href="procadrans.html" class="">Procadrans</a></li>
+        <li><a href="sni.html" class="active">Style Network International</a></li>
+        <li><a href="contact.html" class="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+
+  <div class="hero">
+    <div>
+      <p class="hero-kicker">Stage ingénieur adjoint</p>
+      <h1>Style Network International</h1>
+      <p class="hero-stage">Amélioration continue et optimisation des stocks, en B2B comme en B2C, chez un distributeur de textile, chaussures, maroquinerie et accessoires de mode.</p>
+    </div>
+    <svg class="hero-dial" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration d'un t-shirt">
+      <path class="vetement" d="M 68 35 L 32 60 L 62 88 L 62 175 L 138 175 L 138 88 L 168 60 L 132 35 Q 118 50 100 50 Q 82 50 68 35 Z"/>
+
+    </svg>
+  </div>
+
+  <p class="section-texte">
+    SNI est une entreprise spécialisée dans la commercialisation et la distribution de textile, chaussures, maroquinerie
+    et divers accessoires de mode, aussi bien en B2B qu'en B2C. L'entreprise commercialise et distribue ses propres
+    marques mais aussi d'autres marques sous licence.
+  </p>
+
+  <div class="citation">
+    <span class="etiquette">Problématique générale</span>
+    <p>Comment réduire les temps d'expédition des commandes, de la réception à la préparation, l'emballage et l'expédition ?</p>
+  </div>
+
+  <h1 class="sous-titre">Projet 1 — Optimisation des stocks (B2B drop-shipping)</h1>
+
+  <div class="carte">
+    <h3>Contexte</h3>
+    <p>Lors de la préparation des commandes, les préparateurs se déplacent en étoile autour des tables d'emballage.
+      Ils récupèrent une liste papier des références à collecter, déposent les articles à la table d'emballage,
+      puis passent à la liste suivante.</p>
+  </div>
+
+  <div class="carte">
+    <h3>Objectif</h3>
+    <p>Minimiser les temps d'expédition des commandes en réduisant les distances parcourues par les préparateurs,
+      et donc les temps de préparation.</p>
+  </div>
+
+  <div class="carte">
+    <h3>Axe d'amélioration</h3>
+    <p>Analyser les ventes par référence (en quantité et en fréquence), croiser cette analyse avec l'emplacement
+      dans l'entrepôt, puis mettre en place un indicateur définissant si la référence doit être déplacée ou non.</p>
+  </div>
+
+  <div class="carte">
+    <h3>En pratique</h3>
+    <p>Extraction ERP des ventes des deux dernières années et analyse ABC/XYZ. L'analyse ABC hiérarchise les
+      articles selon leur volume de ventes, tandis que l'analyse XYZ complète cette lecture en tenant compte de
+      la variabilité de la demande (écart-type / moyenne).</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 18px;">
+      <div>
+        <strong style="display:block; color: var(--bleu-fonce); font-family: var(--police-titre); font-size: 1.05rem; margin-bottom: 8px;">Classification ABC — volume de ventes</strong>
+        <ul class="liste-jolie">
+          <li>A : les articles les plus importants - les 80 premiers pourcents des références les plus vendues.</li>
+          <li>B : des articles de moyenne importance - de 80 à 95 %.</li>
+          <li>C : les articles les moins critiques - les 5 derniers pourcents.</li>
+        </ul>
+      </div>
+      <div>
+        <strong style="display:block; color: var(--bleu-fonce); font-family: var(--police-titre); font-size: 1.05rem; margin-bottom: 8px;">Classification XYZ — variabilité de la demande</strong>
+        <ul class="liste-jolie">
+          <li>X : demande régulière et prévisible - coefficient de variation &lt; 0,2.</li>
+          <li>Y : demande moyennement variable, souvent saisonnière - entre 0,2 et 0,6.</li>
+          <li>Z : demande très irrégulière, difficile à anticiper - coefficient de variation &gt; 0,6.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 18px;">Chaque référence est ainsi croisée (A|X, A|Y, A|Z, B|X… jusqu'à C|Z). En définissant une zone
+      « proche » et une zone « éloignée » des tables d'emballage, l'objectif était d'identifier les références A|X et A|Y
+      situées en zone éloignée pour les rapprocher, réduisant ainsi les distances parcourues par les préparateurs.</p>
+
+    <img src="Images/plansni.png" alt="Schéma des flux de déplacement des zones éloignées vers les zones proches des postes d'emballage" style="margin-top: 20px;">
+    <figcaption>Schéma représentant les flux de déplacement des zones éloignées des postes d'emballage vers les zones plus proches.</figcaption>
+  </div>
+
+  <div class="carte">
+    <h3>Résultats</h3>
+    <p>Ce projet a abouti à la formulation de recommandations. Toutefois, la mise en œuvre du déplacement des références n’a pas été possible en raison de la forte activité saisonnière observée durant la période de stage. Cette opération aurait en effet nécessité l’arrêt complet de la préparation des commandes pendant plusieurs jours, ce qui n’était pas envisageable dans ce contexte.</p>
+  </div>
+
+  <h1 class="sous-titre">Projet 2 — Amélioration continue (B2C Marketplace)</h1>
+
+  <div class="carte">
+    <h3>Contexte</h3>
+    <p>La partie Marketplace regroupe plusieurs tâches opérationnelles récurrentes : renseigner différentes bases
+      de données internes (fichiers Excel), réserver les créneaux d'enlèvement auprès des transporteurs et imprimer
+      les documents nécessaires (bons de commande, factures, bons de retour, étiquettes de transport).</p>
+  </div>
+
+  <div class="carte">
+    <h3>Objectif</h3>
+    <p>Minimiser les temps d'expédition des commandes en réduisant le temps consacré aux tâches administratives
+      et opérationnelles.</p>
+  </div>
+
+  <div class="carte">
+    <h3>Axe d'amélioration</h3>
+    <p>Développement d'un UserForm VBA centralisant et automatisant l'ensemble des tâches à réaliser entre la
+      réception des commandes Marketplace et leur expédition.</p>
+  </div>
+
+  <div class="carte">
+    <h3>En pratique</h3>
+    <strong style="display:block; color: var(--bleu-fonce); font-family: var(--police-titre); font-size: 1.05rem; margin-bottom: 8px;">Étude UML</strong>
+    <ul class="liste-jolie">
+      <li>Expression du besoin et dérivation en exigences.</li>
+      <li>Diagramme de cas d'utilisation.</li>
+      <li>Diagramme de classes.</li>
+      <li>Diagramme de navigation.</li>
+    </ul>
+    <p style="margin-top: 16px;">Codage en VBA du UserForm, avec une fonctionnalité de lecture de PDF développée en
+      Python par souci d'optimisation, puis intégrée au code VBA.</p>
+
+    <img src="Images/appvba.png" alt="Captures d'illustration de l'application VBA" style="margin-top: 20px;">
+    <figcaption>Captures d'illustration de l'application VBA.</figcaption>
+  </div>
+
+  <div class="carte">
+    <h3>Conduite du changement</h3>
+    <ul class="liste-jolie">
+      <li><strong>Démonstration :</strong> observation du traitement des commandes Marketplace, avec explications détaillées.</li>
+      <li><strong>Prise en main guidée :</strong> traitement des commandes par l'équipe, accompagné pas à pas.</li>
+      <li><strong>Autonomie :</strong> utilisation autonome de l'application, avec un accompagnement disponible en cas de besoin.</li>
+    </ul>
+    <p style="margin-top: 16px;">Un guide d'utilisation et de maintenance de l'application a également été rédigé.</p>
+  </div>
+
+  <div class="carte">
+    <h3>Résultats</h3>
+    <div class="resultats-grille">
+      <div class="stat-phare">
+        <span class="chiffre">59%</span>
+        <span class="libelle">de réduction du temps d'expédition Marketplace</span>
+      </div>
+      <ul class="liste-jolie">
+        <li>Diminution des erreurs humaines dans le traitement des commandes.</li>
+        <li>Une libération de 20 % du temps quotidien de mobilisation du personnel consacré à ces tâches.</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+</body>
+</html>
